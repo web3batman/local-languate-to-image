@@ -1,0 +1,518 @@
+{
+    "css": {
+        "alertcomponent": {
+            "icon": {
+                "class": "",
+                "style": ""
+            },
+            "title": {
+                "class": "",
+                "style": ""
+            },
+            "container": {
+                "class": "",
+                "style": ""
+            },
+            "background": {
+                "class": "",
+                "style": ""
+            },
+            "description": {
+                "class": "",
+                "style": ""
+            }
+        },
+        "selectcomponent": {
+            "input": {
+                "class": "",
+                "style": "",
+                "tooltip": "https://github.com/rob-balfre/svelte-select/blob/master/docs/theming_variables.md"
+            }
+        },
+        "horizontaldividercomponent": {
+            "divider": {
+                "class": "",
+                "style": "",
+                "tooltip": "`background-color` and `height` are handled by the component configuration"
+            },
+            "container": {
+                "class": "",
+                "style": ""
+            }
+        },
+        "verticalsplitpanescomponent": {
+            "container": {
+                "class": "",
+                "style": ""
+            }
+        }
+    },
+    "grid": [
+        {
+            "3": {
+                "h": 1,
+                "w": 2,
+                "x": 0,
+                "y": 0,
+                "fixed": false
+            },
+            "12": {
+                "h": 1,
+                "w": 3,
+                "x": 5,
+                "y": 2,
+                "fixed": false
+            },
+            "id": "a",
+            "data": {
+                "id": "a",
+                "type": "selectcomponent",
+                "actions": [],
+                "customCss": {
+                    "input": {
+                        "class": "",
+                        "style": "",
+                        "tooltip": "https://github.com/rob-balfre/svelte-select/blob/master/docs/theming_variables.md"
+                    }
+                },
+                "recomputeIds": [],
+                "configuration": {
+                    "items": {
+                        "type": "static",
+                        "value": [
+                            {
+                                "label": "Yoruba",
+                                "value": "yo"
+                            },
+                            {
+                                "label": "French",
+                                "value": "fr"
+                            }
+                        ]
+                    },
+                    "create": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "disabled": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "fullWidth": {
+                        "type": "static",
+                        "value": true
+                    },
+                    "placeholder": {
+                        "type": "static",
+                        "value": "Select a language"
+                    },
+                    "defaultValue": {
+                        "type": "static"
+                    },
+                    "preselectFirst": {
+                        "type": "static",
+                        "value": true
+                    }
+                },
+                "verticalAlignment": "center"
+            }
+        },
+        {
+            "3": {
+                "h": 1,
+                "w": 2,
+                "x": 0,
+                "y": 1,
+                "fixed": false
+            },
+            "12": {
+                "h": 1,
+                "w": 3,
+                "x": 5,
+                "y": 4,
+                "fixed": false
+            },
+            "id": "b",
+            "data": {
+                "id": "b",
+                "type": "textinputcomponent",
+                "actions": [],
+                "customCss": {
+                    "input": {
+                        "class": "",
+                        "style": ""
+                    }
+                },
+                "configuration": {
+                    "disabled": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "afterIcon": {
+                        "type": "static",
+                        "value": ""
+                    },
+                    "beforeIcon": {
+                        "type": "static",
+                        "value": ""
+                    },
+                    "placeholder": {
+                        "type": "static",
+                        "value": "Type..."
+                    },
+                    "defaultValue": {
+                        "type": "static"
+                    }
+                },
+                "verticalAlignment": "center"
+            }
+        },
+        {
+            "3": {
+                "h": 1,
+                "w": 1,
+                "x": 2,
+                "y": 0,
+                "fixed": false
+            },
+            "12": {
+                "h": 1,
+                "w": 3,
+                "x": 5,
+                "y": 6,
+                "fixed": false
+            },
+            "id": "c",
+            "data": {
+                "id": "c",
+                "type": "buttoncomponent",
+                "actions": [],
+                "customCss": {
+                    "button": {
+                        "class": "",
+                        "style": ""
+                    },
+                    "container": {
+                        "class": "",
+                        "style": ""
+                    }
+                },
+                "recomputeIds": [],
+                "configuration": {
+                    "size": {
+                        "type": "static",
+                        "value": "xs"
+                    },
+                    "color": {
+                        "type": "static",
+                        "value": "blue"
+                    },
+                    "label": {
+                        "type": "static",
+                        "value": "Press me"
+                    },
+                    "onError": {
+                        "type": "oneOf",
+                        "selected": "sendErrorToast",
+                        "configuration": {
+                            "open": {
+                                "id": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "close": {
+                                "id": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "setTab": {
+                                "setTab": {
+                                    "type": "static",
+                                    "value": []
+                                }
+                            },
+                            "gotoUrl": {
+                                "url": {
+                                    "type": "static",
+                                    "value": ""
+                                },
+                                "newTab": {
+                                    "type": "static",
+                                    "value": true
+                                }
+                            },
+                            "errorOverlay": {},
+                            "sendErrorToast": {
+                                "message": {
+                                    "type": "static",
+                                    "value": "An error occured"
+                                },
+                                "appendError": {
+                                    "type": "static",
+                                    "value": true
+                                }
+                            }
+                        }
+                    },
+                    "disabled": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "afterIcon": {
+                        "type": "static",
+                        "value": ""
+                    },
+                    "onSuccess": {
+                        "type": "oneOf",
+                        "selected": "sendToast",
+                        "configuration": {
+                            "none": {},
+                            "open": {
+                                "id": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "close": {
+                                "id": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "setTab": {
+                                "setTab": {
+                                    "type": "static",
+                                    "value": []
+                                }
+                            },
+                            "gotoUrl": {
+                                "url": {
+                                    "type": "static",
+                                    "value": ""
+                                },
+                                "newTab": {
+                                    "type": "static",
+                                    "value": true
+                                }
+                            },
+                            "openModal": {
+                                "modalId": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "sendToast": {
+                                "message": {
+                                    "type": "static",
+                                    "value": "Translation Successful!"
+                                }
+                            },
+                            "clearFiles": {
+                                "id": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            },
+                            "closeModal": {
+                                "modalId": {
+                                    "type": "static",
+                                    "value": ""
+                                }
+                            }
+                        }
+                    },
+                    "beforeIcon": {
+                        "type": "static",
+                        "value": ""
+                    },
+                    "fillContainer": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "triggerOnAppLoad": {
+                        "type": "static",
+                        "value": false
+                    },
+                    "confirmationModal": {
+                        "type": "oneOf",
+                        "selected": "none",
+                        "configuration": {
+                            "none": {},
+                            "confirmationModal": {
+                                "title": {
+                                    "type": "static",
+                                    "value": "Title"
+                                },
+                                "description": {
+                                    "type": "static",
+                                    "value": "Are you sure?"
+                                },
+                                "confirmationText": {
+                                    "type": "static",
+                                    "value": "Confirm"
+                                }
+                            }
+                        }
+                    }
+                },
+                "componentInput": {
+                    "type": "runnable",
+                    "fields": {
+                        "data": {
+                            "expr": "return {\r\n  \"language\": a.result,\r\n  \"prompt\": b.result\r\n}",
+                            "type": "evalv2",
+                            "fieldType": "object",
+                            "connections": [
+                                {
+                                    "id": "result",
+                                    "componentId": "b"
+                                },
+                                {
+                                    "id": "result",
+                                    "componentId": "a"
+                                }
+                            ]
+                        }
+                    },
+                    "runnable": {
+                        "name": "Inline Script 0",
+                        "type": "runnableByName",
+                        "inlineScript": {
+                            "path": "u/donald/benin_republic_local_languages_translator/Inline_Script_0",
+                            "schema": {
+                                "type": "object",
+                                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                                "required": [
+                                    "data"
+                                ],
+                                "properties": {
+                                    "data": {
+                                        "default": null,
+                                        "description": "",
+                                        "properties": {},
+                                        "type": "object"
+                                    }
+                                }
+                            },
+                            "content": "import os\nimport wmill\nimport requests\nimport logging\nfrom openai import OpenAI\n\nlogging.basicConfig(level=logging.INFO)\n\n\ndef translate_text(text, source_lang, target_lang, api_key):\n    \n    url = \"https://google-translate1.p.rapidapi.com/language/translate/v2\"\n    payload = {\n        \"q\": text,\n        \"target\": target_lang,\n        \"source\": source_lang\n    }\n    headers = {\n        \"content-type\": \"application/x-www-form-urlencoded\",\n        \"Accept-Encoding\": \"application/gzip\",\n        \"X-RapidAPI-Key\": api_key,\n        \"X-RapidAPI-Host\": \"google-translate1.p.rapidapi.com\"\n    }\n\n    try:\n        response = requests.post(url, data=payload, headers=headers)\n        response.raise_for_status() \n        translated_text = response.json().get('data', {}).get('translations', [{}])[0].get('translatedText', '')\n        logging.info(f\"Translation successful: {translated_text}\")\n        return translated_text\n    except requests.exceptions.HTTPError as e:\n        logging.error(f\"HTTP error occurred: {e.response.status_code} - {e.response.reason}\")\n    except requests.exceptions.RequestException as e:\n        logging.error(f\"Request failed: {e}\")\n        return None\n    except Exception as e:\n        logging.error(f\"An unexpected error occurred: {e}\")\n        return None\n\n    return None\n\n\ndef generate_image(prompt, model=\"dall-e-3\", size=\"1024x1024\", quality=\"standard\", n=1):\n    try:\n        client = OpenAI()\n        response = client.images.generate(\n            model=model,\n            prompt=prompt,\n            size=size,\n            quality=quality,\n            n=n\n        )\n        if response.data and len(response.data) > 0:\n            image_url = response.data[0].url\n            logging.info(f\"Image generated successfully: {image_url}\")\n            return image_url\n        else:\n            logging.error(\"No data received from image generation request.\")\n            return None\n    except ValueError as e:\n        logging.error(f\"Validation error: {e}\")\n        return None\n    except Exception as e:\n        logging.error(f\"Unexpected error occurred: {e}\")\n        return None\n\n        \ndef main(data: dict):\n    language = data.get('language')\n    prompt = data.get('prompt')\n\n    google_translate_api_key = wmill.get_variable(\"u/donald/X-RapidAPI-Key\")\n    if google_translate_api_key is None:\n        raise ValueError(\"Google Translate API key not found in Windmill resources.\")\n\n    openai_api_key = wmill.get_variable(\"u/donald/OPENAI_API_KEY\")\n    if openai_api_key is None:\n        raise ValueError(\"OpenAI API key not found in Windmill resources.\")\n\n    os.environ[\"OPENAI_API_KEY\"] = openai_api_key\n\n    target_lang = \"en\"\n\n    print(prompt)\n    translated_prompt = translate_text(prompt, language, target_lang, google_translate_api_key)\n    if translated_prompt is None:\n        raise ValueError(\"Failed to translate the prompt.\")\n\n    image_url = generate_image(translated_prompt)\n    if image_url is None:\n        raise ValueError(\"Failed to generate the image.\")\n\n    return {\"image_url\": image_url}",
+                            "language": "python3"
+                        }
+                    },
+                    "fieldType": "any",
+                    "autoRefresh": false,
+                    "recomputeOnInputChanged": false
+                },
+                "verticalAlignment": "center",
+                "horizontalAlignment": "center"
+            }
+        },
+        {
+            "3": {
+                "h": 1,
+                "w": 3,
+                "x": 0,
+                "y": 3,
+                "fixed": false
+            },
+            "12": {
+                "h": 1,
+                "w": 12,
+                "x": 0,
+                "y": 7,
+                "fixed": false
+            },
+            "id": "e",
+            "data": {
+                "id": "e",
+                "type": "horizontaldividercomponent",
+                "actions": [],
+                "customCss": {
+                    "divider": {
+                        "class": "",
+                        "style": "",
+                        "tooltip": "`background-color` and `height` are handled by the component configuration"
+                    },
+                    "container": {
+                        "class": "",
+                        "style": ""
+                    }
+                },
+                "configuration": {
+                    "size": {
+                        "type": "static",
+                        "value": 2
+                    },
+                    "color": {
+                        "type": "static",
+                        "value": "#00000060"
+                    }
+                },
+                "verticalAlignment": "center"
+            }
+        },
+        {
+            "3": {
+                "h": 4,
+                "w": 3,
+                "x": 0,
+                "y": 4,
+                "fixed": false
+            },
+            "12": {
+                "h": 4,
+                "w": 5,
+                "x": 4,
+                "y": 8,
+                "fixed": false
+            },
+            "id": "f",
+            "data": {
+                "id": "f",
+                "type": "imagecomponent",
+                "actions": [],
+                "customCss": {
+                    "image": {
+                        "class": "",
+                        "style": ""
+                    }
+                },
+                "configuration": {
+                    "source": {
+                        "expr": "return c.result.image_url;",
+                        "type": "evalv2",
+                        "value": "",
+                        "connections": [
+                            {
+                                "id": "result",
+                                "componentId": "c"
+                            }
+                        ]
+                    },
+                    "altText": {
+                        "type": "static",
+                        "value": "Generated Image"
+                    },
+                    "imageFit": {
+                        "type": "static",
+                        "value": "contain"
+                    },
+                    "sourceKind": {
+                        "type": "static",
+                        "value": "url"
+                    }
+                }
+            }
+        }
+    ],
+    "theme": {
+        "path": "f/app_themes/theme_0",
+        "type": "path"
+    },
+    "subgrids": {},
+    "fullscreen": false,
+    "norefreshbar": false,
+    "hiddenInlineScripts": [],
+    "unusedInlineScripts": []
+}
