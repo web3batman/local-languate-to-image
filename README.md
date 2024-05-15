@@ -1,3 +1,6 @@
+![undefined_imageLink_lk8u20gm3](https://github.com/DonGuillotine/benin-local-language-to-image/assets/89584431/29440681-bd1c-4945-a5ba-cd7ded231b15)
+
+
 # Local Language Text-to-Image Generator
 
 This project is a local language text-to-image generator that allows users to generate images based on text prompts in Yoruba or French languages. It utilizes the Google Translate API to translate the prompts to English and then generates images using the Dall-E 3 model.
